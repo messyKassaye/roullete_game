@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.NewWithdrawalFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/first_layout"
+            android:orientation="vertical"
+            android:layout_below="@id/toolbar"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/many_withdrawal"
+                android:text="Welcome to Roulette6 coin withdrawal"
+                android:gravity="left"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:theme="@style/MyTextInputLayout"
+                    android:textColorHint="@color/hint_color"
+                    android:paddingTop="5dp"
+                    android:id="@+id/input_layout_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/withdrawal_edittext"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/text_field"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="#242424"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="15dp"
+                        android:hint="Enter the amount you want to withdraw" />
+                </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:id="@+id/withdrawal_error"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:layout_marginBottom="20dp"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/send"
+                        android:background="@drawable/button_normal"
+                        android:textColor="@color/white"
+                        android:text="Send Request"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/success_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+             <TextView
+                 android:id="@+id/success_message"
+                 android:textColor="@android:color/holo_orange_dark"
+                 android:textSize="18sp"
+                 android:gravity="center"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+             </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

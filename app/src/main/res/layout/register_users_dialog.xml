@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/main_back"
+        android:orientation="horizontal"
+        android:id="@+id/login_header"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create account" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/dialog_registerusername_input"
+                    android:background="@drawable/text_field"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textColorHint="#242424"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:hint="user name" />
+
+                <EditText
+                    android:id="@+id/dialog_registeremail_input"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/text_field"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#242424"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:hint="email" />
+
+
+                <EditText
+                    android:id="@+id/dialog_registerpassword_input"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:background="@drawable/text_field"
+                    android:layout_marginBottom="10dp"
+                    android:textColorHint="#242424"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:hint="password" />
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/editbg"
+                    android:padding="5dp"
+                    android:id="@+id/registererror_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/button_normal"
+                        android:id="@+id/registerdialog_login_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="10dp"
+                        android:text="Create account"
+                        />
+                    <Button
+                        android:textColor="#fff"
+                        android:background="@drawable/button_normal"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/registerdialog_cancel_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/proregister"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

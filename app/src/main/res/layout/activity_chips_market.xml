@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meseret.roulette.ChipsMarket">
+   <include layout="@layout/tool_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@id/toolbar"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:id="@+id/main_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/company_bitcoin_address"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/blue_textcolor"
+                   android:gravity="left"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="Enter How many chips you need"
+                       android:layout_marginRight="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <EditText
+                       android:id="@+id/chips_amount_value"
+                       android:layout_width="match_parent"
+                       android:layout_marginLeft="20dp"
+                       android:paddingLeft="15dp"
+                       android:background="@drawable/text_field"
+                       android:hint="Enter how many chips you need"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_margin="5dp"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="How many chips you need"
+                       android:visibility="invisible"
+                       android:layout_marginRight="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_marginLeft="40dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <TextView
+                           android:id="@+id/chips_maxocoin_value"
+                           android:textColor="@color/blue_textcolor"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content" />
+                       <TextView
+                           android:id="@+id/maxocoin_link"
+                           android:text="@string/maxcoinlink"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content" />
+                   </LinearLayout>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="enter your maxocoin transaction hash id"
+                       android:layout_marginRight="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <EditText
+                       android:id="@+id/transaction_value"
+                       android:layout_width="match_parent"
+                       android:paddingLeft="15dp"
+                       android:background="@drawable/text_field"
+                       android:hint="enter your maxocoin transaction hash id"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+               <TextView
+                   android:gravity="center"
+                   android:id="@+id/chipsMarket_error"
+                   android:textColor="@android:color/holo_red_dark"
+                   android:visibility="gone"
+                   android:layout_margin="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <LinearLayout
+                   android:layout_margin="10dp"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:text="enter your maxocoin transaction hash id"
+                       android:layout_marginRight="10dp"
+                       android:visibility="invisible"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <Button
+                       android:id="@+id/send_request_btn"
+                       android:text="Send Request"
+                       android:background="@drawable/button_normal"
+                       android:textColor="@color/white"
+                       android:layout_margin="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/success_shower_layout"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                 <TextView
+                     android:id="@+id/success_shower_textview"
+                     android:textColor="@color/blue_textcolor"
+                     android:gravity="center"
+                     android:textSize="18sp"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/chips_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

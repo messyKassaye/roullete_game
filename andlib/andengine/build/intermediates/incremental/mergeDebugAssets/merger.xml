@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\all data\Software Engineering\android\projects\Roulette\andlib\andengine\assets"/><source path="C:\all data\Software Engineering\android\projects\Roulette\andlib\andengine\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\all data\Software Engineering\android\projects\Roulette\andlib\andengine\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/dialoHeader"
+        android:background="@color/colorPrimaryDark"
+        android:padding="5dp" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add your bitcoin address" />
+    </LinearLayout>
+   <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="50dp"
+       android:layout_below="@+id/dialogHeader"
+        android:theme="@style/MyTextInputLayout"
+        android:textColorHint="@color/hint_color"
+        android:paddingTop="5dp"
+        android:id="@+id/input_layouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/user_bitcoin_address"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:hint="paste or add bitcoin address" />
+
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/error_handler"
+        android:visibility="gone"
+        android:textColor="@color/editbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/input_layouts" />
+    <Button
+        android:textColor="#fff"
+        android:id="@+id/register_address"
+        android:background="@drawable/button_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="add my address"
+        android:layout_below="@+id/error_handler" />
+    <ProgressBar
+        android:id="@+id/add_bar"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Roulette</string>
+    <string name="title_activity_custom_login">CustomLogin</string>
+    <string name="title_activity_add__referral_code">Add_Referral_code</string>
+    <string name="title_activity_custom_profile">CustomProfile</string>
+    <string name="title_activity_waiter">WaiterActivity</string>
+    <string name="title_activity_game_display">GameDisplay</string>
+    <string name="title_activity_my_commission">MyCommission</string>
+    <string name="title_activity_my_levels">MyLevels</string>
+    <string name="title_activity_chips_market">ChipsMarket</string>
+    <string name="title_activity_main_profile">MainProfile</string>
+    <string name="title_activity_game_scene">GameScene</string>
+    <string name="menu_name"><u>Show Company bitcoin address</u></string>
+    <string name="title_activity_withdrawal">Withdrawal</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestAct</string>
+    <string name="maxcoinlink"><a href="https://www.maxocoin.io/">for more click here: maxocoin.io</a></string>
+</resources>

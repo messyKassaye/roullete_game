@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:theme="@style/MyTextInputLayout"
+        android:textColorHint="@color/hint_color"
+        android:paddingTop="5dp"
+        android:id="@+id/input_layout_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/new_username"
+            android:layout_width="match_parent"
+            android:background="@drawable/text_field"
+            android:textColor="@android:color/black"
+            android:inputType="text"
+            android:textColorHint="#242424"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="15dp"
+            android:hint="Enter new password" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/newuser_error"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/change_user_name_btn"
+        android:background="@drawable/button_normal"
+        android:textColor="@color/white"
+        android:text="Change username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/main_back"
+        android:orientation="horizontal"
+        android:id="@+id/login_header"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In" />
+    </LinearLayout>
+
+
+
+   <ScrollView
+       android:layout_below="@+id/login_header"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:padding="10dp"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/error_value"
+               android:gravity="center"
+               android:textColor="@color/editbg"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_marginTop="10dp"
+               android:theme="@style/MyTextInputLayout"
+               android:textColorHint="@color/hint_color"
+               android:paddingTop="5dp"
+               android:id="@+id/input_layout_password"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/dialog_username_input"
+                   android:layout_width="match_parent"
+                   android:background="@drawable/text_field"
+                   android:textColorHint="#242424"
+                   android:textColor="@color/black"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="15dp"
+                   android:hint="email address" />
+
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_marginTop="10dp"
+               android:theme="@style/MyTextInputLayout"
+               android:textColorHint="@color/hint_color"
+               android:paddingTop="5dp"
+               android:id="@+id/input_layout"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <EditText
+                   android:id="@+id/dialog_password_input"
+                   android:layout_width="match_parent"
+                   android:textColor="@color/black"
+                   android:background="@drawable/text_field"
+                   android:textColorHint="#242424"
+                   android:layout_height="wrap_content"
+                   android:inputType="textPassword"
+                   android:paddingLeft="15dp"
+                   android:hint="Password" />
+
+           </android.support.design.widget.TextInputLayout>
+
+           <LinearLayout
+               android:layout_margin="10dp"
+               android:padding="20dp"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <Button
+                   android:background="@drawable/button_normal"
+                   android:id="@+id/dialog_login_button"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="#fff"
+                   android:layout_marginBottom="10dp"
+                   android:text="Sign In"
+                   />
+
+               <Button
+                   android:textColor="#fff"
+                   android:background="@drawable/button_normal"
+                   android:id="@+id/dialog_cancel_button"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Cancel" />
+           </LinearLayout>
+
+       </LinearLayout>
+   </ScrollView>
+
+
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/dialog_login_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
